@@ -29,7 +29,11 @@
                     charcoal_black: '#212121',
                     gray_black: '#737373',
                     light_green: '#ABEF5F',
-                    light_green_50: 'rgba(171, 239, 95, 0.5)'
+                    light_green_50: 'rgba(171, 239, 95, 0.5)',
+                    dark_pink: '#E7C1D3',
+                    dark_yellow: '#EFDA6E',
+                    green: '#A4DAC3',
+                    dark_blue: '#77AAEA',
                 },
                 container: {
                     center: true,
@@ -157,22 +161,22 @@
         <div class="container flex">
           <div class="content-left max-w-[560px]">
             <img src="./assets/Vector.png" alt="Vection Icon" class="absolute top-[5%] left-[15%]">
-            <div class="tooltip max-w-[130px] flex items-center bg-white rounded-full px-4 py-2">
+            <div class="tooltip max-w-[140px] flex items-center bg-white rounded-full px-4 py-2">
               <i class="fas fa-long-arrow-alt-right text-dark_black"></i>
-              <p class="mx-2 text-dark_black">About Us</p>
+              <p class="mx-2 font-bold text-dark_black">About Us</p>
             </div>
             <div class="content-title">
-              <h2 class="text-[40px] text-charcoal_black leading-[55px] font-extrabold py-4">We design thoughtful, liveable spaces</h2>
+              <h2 class="text-[40px] text-charcoal_black leading-[55px] font-bold py-4">We design thoughtful, liveable spaces</h2>
               <p class="text-dark_black leading-[26px] font-medium pt-2 pb-4">The barn house captivates with its blend of rustic charm and 
                 modern sophistication, featuring weathered wood, sleek metal accents.</p>
-              <div class="bg-white p-6 flex items-center max-w-[92%] rounded-[16px] mt-2 mb-6">
+              <div class="bg-white p-6 flex items-center max-w-[92%] rounded-2xl mt-2 mb-6">
                 <img src="/assets/commercial.png" alt="Commercial icon" class="max-h-[64px]">
                 <div class="ml-8">
                   <h3 class="text-xl text-dark_black leading-[26px] font-extrabold pb-[10px]">Commercial</h3>
                   <p class="text-gray_black leading-[26px] font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
                 </div>
               </div>
-              <div class="bg-white p-6 flex items-center max-w-[92%] rounded-[16px] mt-2 mb-6">
+              <div class="bg-white p-6 flex items-center max-w-[92%] rounded-2xl mt-2 mb-6">
                 <img src="/assets/residential.png" alt="Commercial icon" class="max-h-[64px]">
                 <div class="ml-8">
                   <h3 class="text-xl text-dark_black leading-[26px] font-extrabold pb-[10px]">Residential</h3>
@@ -190,7 +194,7 @@
     <!-- We Design Thouughtful Section End -->
     <!-- Information Section Start -->
     <div class="information-section bg-off_white py-[50px]">
-        <div class="container flex items-center justify-around bg-white rounded-[24px] p-14">
+        <div class="container flex items-center justify-around bg-white rounded-3xl p-14">
           <div class="item flex flex-col items-center">
             <img src="/assets/comment.png" alt="Comment Icon">
             <h3 class="text-[40px] text-dark_black font-extrabold">235+</h3>
@@ -198,21 +202,55 @@
           </div>
           <div class="item flex flex-col items-center">
             <img src="/assets/departement.png" alt="Departement Icon">
-            <h3 class="text-[40px] text-dark_black font-extrabold">50++</h3>
+            <h3 class="text-[40px] text-dark_black font-extrabold">50+</h3>
             <p class="text-base text-gray_black font-medium">Work Departments</p>
           </div>
           <div class="item flex flex-col items-center">
-            <img src="/assets/user-multiple.png" alt="Multiple User Icon">
+            <img src="/assets/user-group.png" alt="Group User Icon">
             <h3 class="text-[40px] text-dark_black font-extrabold">30k+</h3>
             <p class="text-base text-gray_black font-medium">Our Happy Client</p>
           </div>
           <div class="item flex flex-col items-center">
-            <img src="/assets/user-group.png" alt="Group User Icon">
+            <img src="/assets/user-multiple.png" alt="Multiple User Icon">
             <h3 class="text-[40px] text-dark_black font-extrabold">307+</h3>
             <p class="text-base text-gray_black font-medium">Staff Members</p>
           </div>
         </div>
     </div>
     <!-- Information Section End -->
+    <!-- Work Process Section Start -->
+    <div class="work-process bg-off_white py-[100px]">
+        <div class="container flex flex-col items-center">
+            <div class="tooltip max-w-[260px] flex items-center bg-white rounded-full px-4 py-2">
+                <i class="fas fa-long-arrow-alt-right text-dark_black"></i>
+                <p class="mx-2 font-bold text-dark_black">How we works</p>
+            </div>
+            <h2 class="text-[40px] text-charcoal_black leading-[55px] font-bold py-4">Our Works Process</h2>
+            <p class="text-dark_black leading-[26px] font-medium pt-2 pb-4 max-w-[55%] text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            <div class="work-process-items w-full pt-4 pb- flex justify-between">
+                <div class="item max-w-[275px] p-6 bg-dark_pink rounded-2xl">
+                    <img src="/assets/concept.png" alt="Concept Icon">
+                    <h3 class="text-xl leading-[26px] font-extrabold text-secondary_dark_black py-[10px]">Concept</h3>
+                    <p class="text-base leading-[26px] font-medium text-dark_black">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+                <div class="item max-w-[275px] p-6 bg-dark_yellow rounded-2xl">
+                    <img src="/assets/flow-chart.png" alt="Concept Icon">
+                    <h3 class="text-xl leading-[26px] font-extrabold text-secondary_dark_black py-[10px]">Design Process</h3>
+                    <p class="text-base leading-[26px] font-medium text-dark_black">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+                <div class="item max-w-[275px] p-6 bg-green rounded-2xl">
+                    <img src="/assets/vision.png" alt="Concept Icon">
+                    <h3 class="text-xl leading-[26px] font-extrabold text-secondary_dark_black py-[10px]">Supervision</h3>
+                    <p class="text-base leading-[26px] font-medium text-dark_black">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+                <div class="item max-w-[275px] p-6 bg-dark_blue rounded-2xl">
+                    <img src="/assets/budget-planning.png" alt="Concept Icon">
+                    <h3 class="text-xl leading-[26px] font-extrabold text-secondary_dark_black py-[10px]">Budget Planning</h3>
+                    <p class="text-base leading-[26px] font-medium text-dark_black">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Work Process Section End -->
 </body>
 </html>
