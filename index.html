@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.min.css" integrity="sha512-f2MWjotY+JCWDlE0+QAshlykvZUtIm35A6RHwfYZPdxKgLJpL8B+VVxjpHJwZDsZaWdyHVhlIHoblFYGkmrbhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -12,23 +15,123 @@
     <script>
     tailwind.config = {
         theme: {
-        extend: {
-            colors: {
-            white: '#FFFFFF',
-            off_white: '#F4F4F4',
-            second_off_white: '#E9E9E9',
-            black: '#000000',
-            dark_black: '#494949',
-            secondary_dark_black: '#1C1C1C',
-            charcoal_black: '#212121',
-            gray_black: '#737373',
+            extend: {
+                fontFamily: {
+                    sans: ['Manrope', 'sans-serif'],
+                },
+                colors: {
+                    white: '#FFFFFF',
+                    off_white: '#F4F4F4',
+                    second_off_white: '#E9E9E9',
+                    black: '#000000',
+                    dark_black: '#494949',
+                    secondary_dark_black: '#1C1C1C',
+                    charcoal_black: '#212121',
+                    gray_black: '#737373',
+                    light_green: '#ABEF5F',
+
+                },
+                container: {
+                    center: true,
+                    padding: '1rem',
+                    screens: {
+                    DEFAULT: '1170px',
+                },
+                textColor: {
+                    DEFAULT: '#212121',
+                },
+              },
+            }
             }
         }
-        }
-    }
     </script>
 </head>
 <body>
-    
+    <!-- Navbar Start -->
+    <div class="navigation-section">
+        <div class="navbar container mt-8">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a>Item 1</a></li>
+                  <li>
+                    <a>Parent</a>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <a href="/">
+                <img src="./assets/Site Logo.png" alt="Site Logo">
+              </a>
+            </div>
+            <div class="navbar-center hidden lg:flex text-gray_black hover:text-dark_black">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="text-dark_black font-extrabold hover:bg-transparent">Home</a></li>
+                <li><a class="hover:font-extrabold hover:bg-transparent">Services</a></li>
+                <li><a class="hover:font-extrabold hover:bg-transparent">Portfolio</a></li>
+                <li><a class="hover:font-extrabold hover:bg-transparent">Blogs</a></li>
+                <li><a class="hover:font-extrabold hover:bg-transparent">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+                <div class="flex-none">
+                    <div class="dropdown dropdown-end">
+                      <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <div class="indicator">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                          </svg>
+                          <span class="badge badge-sm indicator-item">8</span>
+                        </div>
+                      </div>
+                      <div
+                        tabindex="0"
+                        class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
+                        <div class="card-body">
+                          <span class="text-lg font-bold">8 Items</span>
+                          <span class="text-info">Subtotal: $999</span>
+                          <div class="card-actions">
+                            <button class="btn btn-primary btn-block">View cart</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                <button class="text-dark_black text-xl font-extrabold btn px-[20px] rounded-[32px] bg-light_green hover:bg-light_green border-none">
+                    Book Consult
+                    <i class="fas fa-long-arrow-alt-up bg-black rounded-full rotate-45 px-3 py-2" style="color: #ffffff;"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
 </body>
 </html>
