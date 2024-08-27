@@ -54,8 +54,8 @@
     <!-- Navbar Start -->
     <div class="navigation-section">
         <div class="navbar container mt-8">
-            <div class="navbar-start">
-              <div class="dropdown">
+            <div class="navbar-start flex-row-reverse justify-between relative">
+              <div class="dropdown absolute right-[-100%]">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +72,7 @@
                 </div>
                 <ul
                   tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow left-[-10rem]">
                   <li><a>Item 1</a></li>
                   <li>
                     <a>Parent</a>
@@ -99,7 +99,7 @@
             </div>
             <div class="navbar-end ">
                 <div class="dropdown dropdown-end">
-                  <button class="text-xl text-dark_black btn btn-ghost btn-circle bg-[#f1f1f1] mt-[-5px]">
+                  <button class="text-xl text-dark_black btn btn-ghost btn-circle bg-[#f1f1f1] mt-[-5px] max-sm:hidden">
                     <i class="fas fa-search"></i>
                   </button>
                   <div
@@ -124,7 +124,7 @@
                 </div>
                 <div class="flex-none">
                     <div class="dropdown dropdown-end">
-                      <div tabindex="0" role="button" class="btn btn-ghost btn-circle bg-[#f1f1f1] ml-4">
+                      <div tabindex="0" role="button" class="btn btn-ghost btn-circle bg-[#f1f1f1] ml-4 max-sm:hidden">
                         <div class="indicator">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -152,7 +152,7 @@
                         </div>
                       </div>
                     </div>
-                <button class="btn-lg text-dark_black text-xl font-extrabold btn px-[20px] rounded-[32px] bg-light_green hover:bg-light_green border-none ml-4">
+                <button class="btn-lg text-dark_black text-xl font-extrabold btn px-[20px] rounded-[32px] bg-light_green hover:bg-light_green border-none ml-4 max-sm:hidden">
                     Book Consult
                     <i class="fas fa-long-arrow-alt-up bg-black rounded-full rotate-45 px-3 py-2" style="color: #ffffff;"></i>
                 </button>
@@ -163,10 +163,10 @@
     <!-- Hero Section Start -->
     <div class="hero-section">
         <div class="hero container flex flex-col mt-4 mb-[86px]">
-            <img src="./assets/banner.png" alt="Banner Image">
+            <img src="./assets/banner.png" alt="Banner Image" class="max-sm:max-w-[261px]">
             <div class="hero-content text-center">
               <div class="">
-                <h1 class="text-[64px] text-charcoal_black font-extrabold text-dark-black">A barn house of this design has a striking appearance</h1>
+                <h1 class="text-[64px] text-charcoal_black font-extrabold text-dark-black max-sm:text-[28px]">A barn house of this design has a striking appearance</h1>
                 <p class="py-6 xl:w-4/5 mx-auto text-dark_black font-medium leading-[26px]">
                   The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
                 </p>
@@ -217,7 +217,7 @@
     <!-- We Design Thouughtful Section End -->
     <!-- Information Section Start -->
     <div class="information-section bg-off_white py-[50px]">
-        <div class="container flex items-center justify-around bg-white rounded-3xl p-14">
+        <div class="container flex items-center justify-around bg-white rounded-3xl p-14 max-sm:flex-col">
           <div class="item flex flex-col items-center">
             <img src="./assets/comment.png" alt="Comment Icon">
             <h3 class="text-[40px] text-dark_black font-extrabold">235+</h3>
@@ -250,7 +250,7 @@
             </div>
             <h2 class="text-[40px] font-extrabold text-charcoal_black leading-[55px] py-4">Our Works Process</h2>
             <p class="text-dark_black leading-[26px] font-medium pt-2 pb-4 max-w-[55%] text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
-            <div class="work-process-items w-full pt-4 pb- flex justify-between">
+            <div class="work-process-items w-full pt-4 pb- flex justify-between max-sm:flex-col">
                 <div class="item max-w-[275px] p-6 bg-dark_pink rounded-2xl">
                     <img src="./assets/concept.png" alt="Concept Icon">
                     <h3 class="text-xl leading-[26px] font-extrabold text-secondary_dark_black py-[10px]">Concept</h3>
@@ -277,7 +277,7 @@
     <!-- Work Process Section End -->
     <!-- Learn More Section Start -->
      <div class="learn-more pt-[100px] pb-[50px]">
-      <div class="container w-2/5 flex flex-col items-center">
+      <div class="container w-2/5 flex flex-col items-center max-sm:w-full">
         <div class="tooltip max-w-[260px] flex items-center bg-light_green_50 rounded-full px-4 py-2">
           <i class="fas fa-long-arrow-alt-right text-dark_black"></i>
           <p class="mx-2 font-bold text-dark_black">Learn More</p>
@@ -319,8 +319,8 @@
         <p class="text-dark_black leading-[26px] font-medium pt-2 pb-4 max-w-[55%] text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
       </div>
       <div class="portfolio-items">
-        <div class="container flex flex-wrap justify-between">
-          <div class="flex item border border-second_off_white rounded-2xl p-6 gap-6 w-[66%] my-3">
+        <div class="container flex flex-wrap justify-between max-sm:flex-col">
+          <div class="flex item border border-second_off_white rounded-2xl p-6 gap-6 w-[66%] my-3 max-sm:flex-col max-sm:w-full">
             <img src="./assets/img1.png" alt="House Image">
             <div class="flex flex-wrap content-between">
               <h3 class="text-2xl font-extrabold text-dark_black">Commercial</h3>
@@ -384,7 +384,7 @@
         <img src="./assets/Footer Logo.png" alt="Footer Logo" class="mx-auto pb-4">
         <p class="max-w-[678px] mx-auto text-base leading-[26px] font-medium text-gray_black">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
         <div class="footer-menu my-12">
-          <ul class="flex justify-center gap-[120px] font-medium">
+          <ul class="flex justify-center gap-[120px] font-medium max-sm:flex-col max-sm:gap-[32px]">
             <li><a href="#">Home</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Portfolio</a></li>
